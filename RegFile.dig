@@ -1,0 +1,560 @@
+<?xml version="1.0" encoding="utf-8"?>
+<circuit>
+  <version>2</version>
+  <attributes>
+    <entry>
+      <string>Width</string>
+      <int>4</int>
+    </entry>
+  </attributes>
+  <visualElements>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>Din</string>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>32</int>
+        </entry>
+      </elementAttributes>
+      <pos x="0" y="0"/>
+    </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>we</string>
+        </entry>
+      </elementAttributes>
+      <pos x="0" y="40"/>
+    </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>Rw</string>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>5</int>
+        </entry>
+      </elementAttributes>
+      <pos x="0" y="80"/>
+    </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>C</string>
+        </entry>
+      </elementAttributes>
+      <pos x="0" y="120"/>
+    </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>Ra</string>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>5</int>
+        </entry>
+      </elementAttributes>
+      <pos x="0" y="160"/>
+    </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>Rb</string>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>5</int>
+        </entry>
+      </elementAttributes>
+      <pos x="0" y="200"/>
+    </visualElement>
+    <visualElement>
+      <elementName>RegisterFile</elementName>
+      <elementAttributes>
+        <entry>
+          <string>AddrBits</string>
+          <int>5</int>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>Reg</string>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>32</int>
+        </entry>
+      </elementAttributes>
+      <pos x="240" y="0"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Comparator</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Bits</string>
+          <int>5</int>
+        </entry>
+      </elementAttributes>
+      <pos x="240" y="160"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Comparator</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Bits</string>
+          <int>5</int>
+        </entry>
+      </elementAttributes>
+      <pos x="240" y="240"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Const</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Value</string>
+          <long>0</long>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>5</int>
+        </entry>
+      </elementAttributes>
+      <pos x="220" y="180"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Const</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Value</string>
+          <long>0</long>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>5</int>
+        </entry>
+      </elementAttributes>
+      <pos x="220" y="260"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Tunnel</elementName>
+      <elementAttributes>
+        <entry>
+          <string>NetName</string>
+          <string>aZero</string>
+        </entry>
+      </elementAttributes>
+      <pos x="320" y="180"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Tunnel</elementName>
+      <elementAttributes>
+        <entry>
+          <string>NetName</string>
+          <string>bZero</string>
+        </entry>
+      </elementAttributes>
+      <pos x="320" y="260"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Multiplexer</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Bits</string>
+          <int>32</int>
+        </entry>
+      </elementAttributes>
+      <pos x="400" y="20"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Multiplexer</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Bits</string>
+          <int>32</int>
+        </entry>
+      </elementAttributes>
+      <pos x="560" y="0"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Const</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Value</string>
+          <long>0</long>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>32</int>
+        </entry>
+      </elementAttributes>
+      <pos x="540" y="40"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Const</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Value</string>
+          <long>0</long>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>32</int>
+        </entry>
+      </elementAttributes>
+      <pos x="380" y="60"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Tunnel</elementName>
+      <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation rotation="3"/>
+        </entry>
+        <entry>
+          <string>NetName</string>
+          <string>aZero</string>
+        </entry>
+      </elementAttributes>
+      <pos x="580" y="60"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Tunnel</elementName>
+      <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation rotation="3"/>
+        </entry>
+        <entry>
+          <string>NetName</string>
+          <string>bZero</string>
+        </entry>
+      </elementAttributes>
+      <pos x="420" y="80"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>Da</string>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>32</int>
+        </entry>
+      </elementAttributes>
+      <pos x="720" y="20"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>Db</string>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>32</int>
+        </entry>
+      </elementAttributes>
+      <pos x="720" y="160"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Testcase</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>RegFile</string>
+        </entry>
+        <entry>
+          <string>Testdata</string>
+          <testData>
+            <dataString>Din we Rw C Ra Rb Da Db
+0xDEADBEEF 1 1 C 1 1 0xDEADBEEF 0xDEADBEEF
+0x12345678 1 0 C 0 0 0x00000000 0x00000000
+0xFFFFFFFF 1 31 C 31 0 0xFFFFFFFF 0x00000000
+0x55555555 0 31 C 31 1 0xFFFFFFFF 0xDEADBEEF
+0xCAFEBABE 1 0 C 0 31 0x00000000 0xFFFFFFFF
+0x00000002 1 2 C 1 2 0xDEADBEEF 0x00000002
+0x00000000 0 0 C 2 0 0x00000002 0x00000000
+0x00000018 1 3 C 0 3 0x00000000 0x00000018
+0x0C981264 1 3 C 0 30 0x00000000 0x00000000
+0x00000005 1 0 C 30 1 0x00000000 0xDEADBEEF
+0x3F3A7C3F 1 0 C 15 1 0x00000000 0xDEADBEEF
+0x22CF109E 0 11 C 1 3 0xDEADBEEF 0x0C981264
+0x05F3AEF8 0 30 C 2 0 0x00000002 0x00000000
+0x0604F654 1 16 C 1 3 0xDEADBEEF 0x0C981264
+0xA63C0EDC 1 1 C 1 31 0xA63C0EDC 0xFFFFFFFF
+0x65DFFAE2 0 31 C 27 11 0x00000000 0x00000000
+0x00000004 1 31 C 19 3 0x00000000 0x0C981264
+0x5BFAC085 0 1 C 31 1 0x00000004 0xA63C0EDC
+0xD22B81F7 1 30 C 31 31 0x00000004 0x00000004
+0x00000001 1 0 C 31 31 0x00000004 0x00000004
+0xFFFFFFF2 1 0 C 0 1 0x00000000 0xA63C0EDC
+0xB427F8F3 1 0 C 31 1 0x00000004 0xA63C0EDC
+0xF5850D3B 1 16 C 31 3 0x00000004 0x0C981264
+0x611BA327 1 3 C 31 0 0x00000004 0x00000000
+0xFFFFFFF8 1 1 C 1 2 0xFFFFFFF8 0x00000002
+0x90465572 1 3 C 29 2 0x00000000 0x00000002
+0x87654321 1 1 C 3 0 0x90465572 0x00000000
+0x0000001F 1 0 C 0 31 0x00000000 0x00000004
+0x693AEF21 1 31 C 3 31 0x90465572 0x693AEF21
+0xE7EBEF75 1 31 C 1 0 0x87654321 0x00000000
+0xE909A37B 1 1 C 5 31 0x00000000 0xE7EBEF75
+0x0000001D 1 1 C 1 3 0x0000001D 0x90465572
+0x8CE8A43B 1 2 C 0 1 0x00000000 0x0000001D
+0x0000001C 0 1 C 2 3 0x8CE8A43B 0x90465572
+0x198A2543 0 1 C 11 0 0x00000000 0x00000000
+0x2E5D3A5A 1 3 C 0 1 0x00000000 0x0000001D
+0x00000007 1 1 C 0 1 0x00000000 0x00000007
+0xE01690B3 1 30 C 2 2 0x8CE8A43B 0x8CE8A43B
+0x113CABF9 1 30 C 2 3 0x8CE8A43B 0x2E5D3A5A
+0x48C9DD3F 1 0 C 3 31 0x2E5D3A5A 0xE7EBEF75
+0x00000004 1 1 C 0 31 0x00000000 0xE7EBEF75
+0xFFFFFFED 1 1 C 31 2 0xE7EBEF75 0x8CE8A43B
+0x00000000 1 30 C 3 0 0x2E5D3A5A 0x00000000
+0x12345678 1 31 C 3 10 0x2E5D3A5A 0x00000000
+0x87654321 1 30 C 1 6 0xFFFFFFED 0x00000000
+0x55555555 0 2 C 3 31 0x2E5D3A5A 0x12345678
+0xC16B9B72 1 6 C 2 1 0x8CE8A43B 0xFFFFFFED
+0x00000001 0 31 C 28 0 0x00000000 0x00000000
+0xEE903DEC 1 3 C 1 31 0xFFFFFFED 0x12345678
+0x80000001 0 0 C 1 31 0xFFFFFFED 0x12345678
+0x6308B5D8 1 1 C 2 1 0x8CE8A43B 0x6308B5D8
+0x87654321 1 0 C 3 16 0xEE903DEC 0xF5850D3B
+0x00000010 1 3 C 0 2 0x00000000 0x8CE8A43B
+0xA59338CB 0 0 C 1 1 0x6308B5D8 0x6308B5D8
+0xFFFFFFFA 1 17 C 3 2 0x00000010 0x8CE8A43B
+0xF1CB06C6 1 0 C 3 2 0x00000010 0x8CE8A43B
+0xFFFFFFFF 1 0 C 4 2 0x00000000 0x8CE8A43B
+0x00000013 1 30 C 2 1 0x8CE8A43B 0x6308B5D8
+0x00000013 1 0 C 4 3 0x00000000 0x00000010
+0xC37560F7 0 0 C 3 1 0x00000010 0x6308B5D8
+0x5C3985E3 1 2 C 1 2 0x6308B5D8 0x5C3985E3
+0x00000011 1 30 C 0 13 0x00000000 0x00000000
+0x44DF5D46 1 3 C 0 0 0x00000000 0x00000000
+0x0000000F 1 31 C 0 31 0x00000000 0x0000000F
+0xFFFF0000 1 9 C 6 1 0xC16B9B72 0x6308B5D8
+0x00000014 1 0 C 0 3 0x00000000 0x44DF5D46
+0x00000008 0 0 C 3 21 0x44DF5D46 0x00000000
+0x00000001 0 0 C 31 31 0x0000000F 0x0000000F
+0xC0ACDC73 0 1 C 2 31 0x5C3985E3 0x0000000F
+0x00000021 1 0 C 1 3 0x6308B5D8 0x44DF5D46
+0x87654321 1 0 C 1 3 0x6308B5D8 0x44DF5D46
+0xB8D0D0C0 1 31 C 3 0 0x44DF5D46 0x00000000
+0x00000004 1 0 C 1 0 0x6308B5D8 0x00000000
+0xFFFFFFFF 1 30 C 2 31 0x5C3985E3 0xB8D0D0C0
+0x7C9865C5 1 0 C 19 2 0x00000000 0x5C3985E3
+0x2C199E88 1 30 C 0 3 0x00000000 0x44DF5D46
+0xFFFFFFF4 0 0 C 1 3 0x6308B5D8 0x44DF5D46
+0xFFFFFFEE 1 31 C 1 2 0x6308B5D8 0x5C3985E3
+0xFFFFFFFD 0 1 C 3 0 0x44DF5D46 0x00000000
+0xD88B167A 1 1 C 23 1 0x00000000 0xD88B167A
+0xFFB1C29A 0 3 C 0 25 0x00000000 0x00000000
+0x00000020 1 0 C 31 31 0xFFFFFFEE 0xFFFFFFEE
+0x00000021 1 2 C 17 2 0xFFFFFFFA 0x00000021
+0x00000000 1 31 C 1 1 0xD88B167A 0xD88B167A
+0x00000000 1 2 C 1 1 0xD88B167A 0xD88B167A
+0x0000000C 1 3 C 31 1 0x00000000 0xD88B167A
+0xFFFFFFFF 1 0 C 1 1 0xD88B167A 0xD88B167A
+0xF6B0C1FF 0 3 C 3 26 0x0000000C 0x00000000
+0xDD4616DE 1 0 C 6 31 0xC16B9B72 0x00000000
+0x00000000 1 0 C 16 2 0xF5850D3B 0x00000000
+0x61E82875 0 2 C 31 3 0x00000000 0x0000000C
+0x80000000 0 2 C 0 3 0x00000000 0x0000000C
+0xFFFFFFFF 1 31 C 31 2 0xFFFFFFFF 0x00000000
+0x2155858B 0 0 C 3 13 0x0000000C 0x00000000
+0xCA79CB9B 1 3 C 0 1 0x00000000 0xD88B167A
+0xA029BC43 1 2 C 0 31 0x00000000 0xFFFFFFFF
+0x0000001D 1 0 C 31 0 0xFFFFFFFF 0x00000000
+0xC95447DE 1 9 C 17 3 0xFFFFFFFA 0xCA79CB9B
+0x31631EFA 1 1 C 3 31 0xCA79CB9B 0xFFFFFFFF
+0xD91BAEF5 1 0 C 0 2 0x00000000 0xA029BC43
+0xFFFFFFFE 0 30 C 3 3 0xCA79CB9B 0xCA79CB9B
+0x00000014 1 1 C 13 1 0x00000000 0x00000014
+0xFBD23F6F 1 0 C 2 2 0xA029BC43 0xA029BC43
+0xFFFFFFE6 1 3 C 0 2 0x00000000 0xA029BC43
+0x0000001C 1 1 C 0 27 0x00000000 0x00000000
+0xAE4E3D10 1 30 C 3 2 0xFFFFFFE6 0xA029BC43
+0xA73493A5 1 30 C 0 3 0x00000000 0xFFFFFFE6
+0xD5C0F648 1 30 C 31 0 0xFFFFFFFF 0x00000000
+0x342409C4 1 2 C 3 31 0xFFFFFFE6 0xFFFFFFFF
+0xFFFFFFFF 1 31 C 1 21 0x0000001C 0x00000000
+0x103760E9 1 0 C 3 2 0xFFFFFFE6 0x342409C4
+0x00000004 1 0 C 1 0 0x0000001C 0x00000000
+0x0000001F 1 30 C 31 31 0xFFFFFFFF 0xFFFFFFFF
+0x00000001 0 1 C 3 0 0xFFFFFFE6 0x00000000
+0x893A58F1 1 2 C 3 1 0xFFFFFFE6 0x0000001C
+0x80000000 1 3 C 30 31 0x0000001F 0xFFFFFFFF
+0xFFFFFFEB 1 2 C 2 31 0xFFFFFFEB 0xFFFFFFFF
+0xCBE44022 1 0 C 31 0 0xFFFFFFFF 0x00000000
+0xAAAAAAAA 1 0 C 0 0 0x00000000 0x00000000
+0xB5620E89 1 0 C 0 31 0x00000000 0xFFFFFFFF
+0xFFFFFFEE 0 3 C 31 11 0xFFFFFFFF 0x00000000
+0xB07FFE00 1 0 C 31 10 0xFFFFFFFF 0x00000000
+0xFFFFFFF9 0 2 C 1 0 0x0000001C 0x00000000
+0xFFFFFFEA 1 0 C 2 31 0xFFFFFFEB 0xFFFFFFFF
+0x8B353AF1 1 30 C 3 3 0x80000000 0x80000000
+0x3B7F4BB2 1 3 C 0 31 0x00000000 0xFFFFFFFF
+0x00000003 1 2 C 31 0 0xFFFFFFFF 0x00000000
+</dataString>
+          </testData>
+        </entry>
+      </elementAttributes>
+      <pos x="560" y="220"/>
+    </visualElement>
+  </visualElements>
+  <wires>
+    <wire>
+      <p1 x="0" y="0"/>
+      <p2 x="240" y="0"/>
+    </wire>
+    <wire>
+      <p1 x="320" y="0"/>
+      <p2 x="560" y="0"/>
+    </wire>
+    <wire>
+      <p1 x="0" y="80"/>
+      <p2 x="100" y="80"/>
+    </wire>
+    <wire>
+      <p1 x="140" y="80"/>
+      <p2 x="240" y="80"/>
+    </wire>
+    <wire>
+      <p1 x="0" y="160"/>
+      <p2 x="140" y="160"/>
+    </wire>
+    <wire>
+      <p1 x="480" y="160"/>
+      <p2 x="720" y="160"/>
+    </wire>
+    <wire>
+      <p1 x="140" y="160"/>
+      <p2 x="240" y="160"/>
+    </wire>
+    <wire>
+      <p1 x="200" y="240"/>
+      <p2 x="240" y="240"/>
+    </wire>
+    <wire>
+      <p1 x="80" y="20"/>
+      <p2 x="240" y="20"/>
+    </wire>
+    <wire>
+      <p1 x="320" y="20"/>
+      <p2 x="400" y="20"/>
+    </wire>
+    <wire>
+      <p1 x="600" y="20"/>
+      <p2 x="720" y="20"/>
+    </wire>
+    <wire>
+      <p1 x="160" y="100"/>
+      <p2 x="240" y="100"/>
+    </wire>
+    <wire>
+      <p1 x="220" y="180"/>
+      <p2 x="240" y="180"/>
+    </wire>
+    <wire>
+      <p1 x="300" y="180"/>
+      <p2 x="320" y="180"/>
+    </wire>
+    <wire>
+      <p1 x="220" y="260"/>
+      <p2 x="240" y="260"/>
+    </wire>
+    <wire>
+      <p1 x="300" y="260"/>
+      <p2 x="320" y="260"/>
+    </wire>
+    <wire>
+      <p1 x="0" y="40"/>
+      <p2 x="80" y="40"/>
+    </wire>
+    <wire>
+      <p1 x="100" y="40"/>
+      <p2 x="240" y="40"/>
+    </wire>
+    <wire>
+      <p1 x="540" y="40"/>
+      <p2 x="560" y="40"/>
+    </wire>
+    <wire>
+      <p1 x="440" y="40"/>
+      <p2 x="480" y="40"/>
+    </wire>
+    <wire>
+      <p1 x="0" y="120"/>
+      <p2 x="120" y="120"/>
+    </wire>
+    <wire>
+      <p1 x="0" y="200"/>
+      <p2 x="160" y="200"/>
+    </wire>
+    <wire>
+      <p1 x="160" y="200"/>
+      <p2 x="200" y="200"/>
+    </wire>
+    <wire>
+      <p1 x="120" y="60"/>
+      <p2 x="240" y="60"/>
+    </wire>
+    <wire>
+      <p1 x="380" y="60"/>
+      <p2 x="400" y="60"/>
+    </wire>
+    <wire>
+      <p1 x="80" y="20"/>
+      <p2 x="80" y="40"/>
+    </wire>
+    <wire>
+      <p1 x="160" y="100"/>
+      <p2 x="160" y="200"/>
+    </wire>
+    <wire>
+      <p1 x="480" y="40"/>
+      <p2 x="480" y="160"/>
+    </wire>
+    <wire>
+      <p1 x="100" y="40"/>
+      <p2 x="100" y="80"/>
+    </wire>
+    <wire>
+      <p1 x="580" y="40"/>
+      <p2 x="580" y="60"/>
+    </wire>
+    <wire>
+      <p1 x="420" y="60"/>
+      <p2 x="420" y="80"/>
+    </wire>
+    <wire>
+      <p1 x="120" y="60"/>
+      <p2 x="120" y="120"/>
+    </wire>
+    <wire>
+      <p1 x="200" y="200"/>
+      <p2 x="200" y="240"/>
+    </wire>
+    <wire>
+      <p1 x="140" y="80"/>
+      <p2 x="140" y="160"/>
+    </wire>
+  </wires>
+</circuit>

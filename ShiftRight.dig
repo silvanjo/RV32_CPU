@@ -1,0 +1,1166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<circuit>
+  <version>2</version>
+  <attributes>
+    <entry>
+      <string>Width</string>
+      <int>5</int>
+    </entry>
+  </attributes>
+  <visualElements>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>in</string>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>32</int>
+        </entry>
+      </elementAttributes>
+      <pos x="0" y="40"/>
+    </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>shamt</string>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>5</int>
+        </entry>
+      </elementAttributes>
+      <pos x="0" y="260"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Splitter</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Input Splitting</string>
+          <string>5</string>
+        </entry>
+        <entry>
+          <string>Output Splitting</string>
+          <string>1*5</string>
+        </entry>
+      </elementAttributes>
+      <pos x="60" y="260"/>
+    </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>arith</string>
+        </entry>
+      </elementAttributes>
+      <pos x="0" y="180"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Splitter</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Input Splitting</string>
+          <string>32</string>
+        </entry>
+        <entry>
+          <string>Output Splitting</string>
+          <string>31-31</string>
+        </entry>
+      </elementAttributes>
+      <pos x="60" y="140"/>
+    </visualElement>
+    <visualElement>
+      <elementName>And</elementName>
+      <elementAttributes/>
+      <pos x="160" y="140"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Tunnel</elementName>
+      <elementAttributes>
+        <entry>
+          <string>NetName</string>
+          <string>fill</string>
+        </entry>
+      </elementAttributes>
+      <pos x="240" y="160"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Splitter</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Input Splitting</string>
+          <string>32</string>
+        </entry>
+        <entry>
+          <string>Output Splitting</string>
+          <string>1-31</string>
+        </entry>
+      </elementAttributes>
+      <pos x="100" y="60"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Splitter</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Input Splitting</string>
+          <string>31,1</string>
+        </entry>
+        <entry>
+          <string>Output Splitting</string>
+          <string>32</string>
+        </entry>
+      </elementAttributes>
+      <pos x="240" y="60"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Multiplexer</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Bits</string>
+          <int>32</int>
+        </entry>
+      </elementAttributes>
+      <pos x="320" y="20"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Tunnel</elementName>
+      <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation rotation="2"/>
+        </entry>
+        <entry>
+          <string>NetName</string>
+          <string>fill</string>
+        </entry>
+      </elementAttributes>
+      <pos x="200" y="80"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Splitter</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Input Splitting</string>
+          <string>32</string>
+        </entry>
+        <entry>
+          <string>Output Splitting</string>
+          <string>2-31</string>
+        </entry>
+      </elementAttributes>
+      <pos x="440" y="60"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Splitter</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Input Splitting</string>
+          <string>30,2</string>
+        </entry>
+        <entry>
+          <string>Output Splitting</string>
+          <string>32</string>
+        </entry>
+      </elementAttributes>
+      <pos x="580" y="60"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Multiplexer</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Bits</string>
+          <int>32</int>
+        </entry>
+      </elementAttributes>
+      <pos x="660" y="20"/>
+    </visualElement>
+    <visualElement>
+      <elementName>BitExtender</elementName>
+      <elementAttributes>
+        <entry>
+          <string>inputBits</string>
+          <int>1</int>
+        </entry>
+        <entry>
+          <string>outputBits</string>
+          <int>2</int>
+        </entry>
+      </elementAttributes>
+      <pos x="480" y="80"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Tunnel</elementName>
+      <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation rotation="2"/>
+        </entry>
+        <entry>
+          <string>NetName</string>
+          <string>fill</string>
+        </entry>
+      </elementAttributes>
+      <pos x="460" y="80"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Splitter</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Input Splitting</string>
+          <string>32</string>
+        </entry>
+        <entry>
+          <string>Output Splitting</string>
+          <string>4-31</string>
+        </entry>
+      </elementAttributes>
+      <pos x="780" y="60"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Splitter</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Input Splitting</string>
+          <string>28,4</string>
+        </entry>
+        <entry>
+          <string>Output Splitting</string>
+          <string>32</string>
+        </entry>
+      </elementAttributes>
+      <pos x="920" y="60"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Multiplexer</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Bits</string>
+          <int>32</int>
+        </entry>
+      </elementAttributes>
+      <pos x="1000" y="20"/>
+    </visualElement>
+    <visualElement>
+      <elementName>BitExtender</elementName>
+      <elementAttributes>
+        <entry>
+          <string>inputBits</string>
+          <int>1</int>
+        </entry>
+        <entry>
+          <string>outputBits</string>
+          <int>4</int>
+        </entry>
+      </elementAttributes>
+      <pos x="820" y="80"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Tunnel</elementName>
+      <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation rotation="2"/>
+        </entry>
+        <entry>
+          <string>NetName</string>
+          <string>fill</string>
+        </entry>
+      </elementAttributes>
+      <pos x="800" y="80"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Splitter</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Input Splitting</string>
+          <string>32</string>
+        </entry>
+        <entry>
+          <string>Output Splitting</string>
+          <string>8-31</string>
+        </entry>
+      </elementAttributes>
+      <pos x="1120" y="60"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Splitter</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Input Splitting</string>
+          <string>24,8</string>
+        </entry>
+        <entry>
+          <string>Output Splitting</string>
+          <string>32</string>
+        </entry>
+      </elementAttributes>
+      <pos x="1260" y="60"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Multiplexer</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Bits</string>
+          <int>32</int>
+        </entry>
+      </elementAttributes>
+      <pos x="1340" y="20"/>
+    </visualElement>
+    <visualElement>
+      <elementName>BitExtender</elementName>
+      <elementAttributes>
+        <entry>
+          <string>inputBits</string>
+          <int>1</int>
+        </entry>
+        <entry>
+          <string>outputBits</string>
+          <int>8</int>
+        </entry>
+      </elementAttributes>
+      <pos x="1160" y="80"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Tunnel</elementName>
+      <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation rotation="2"/>
+        </entry>
+        <entry>
+          <string>NetName</string>
+          <string>fill</string>
+        </entry>
+      </elementAttributes>
+      <pos x="1140" y="80"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Splitter</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Input Splitting</string>
+          <string>32</string>
+        </entry>
+        <entry>
+          <string>Output Splitting</string>
+          <string>16-31</string>
+        </entry>
+      </elementAttributes>
+      <pos x="1460" y="60"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Splitter</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Input Splitting</string>
+          <string>16,16</string>
+        </entry>
+        <entry>
+          <string>Output Splitting</string>
+          <string>32</string>
+        </entry>
+      </elementAttributes>
+      <pos x="1600" y="60"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Multiplexer</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Bits</string>
+          <int>32</int>
+        </entry>
+      </elementAttributes>
+      <pos x="1680" y="20"/>
+    </visualElement>
+    <visualElement>
+      <elementName>BitExtender</elementName>
+      <elementAttributes>
+        <entry>
+          <string>inputBits</string>
+          <int>1</int>
+        </entry>
+      </elementAttributes>
+      <pos x="1500" y="80"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Tunnel</elementName>
+      <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation rotation="2"/>
+        </entry>
+        <entry>
+          <string>NetName</string>
+          <string>fill</string>
+        </entry>
+      </elementAttributes>
+      <pos x="1480" y="80"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>out</string>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>32</int>
+        </entry>
+      </elementAttributes>
+      <pos x="1800" y="40"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Testcase</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>ShiftRight</string>
+        </entry>
+        <entry>
+          <string>Testdata</string>
+          <testData>
+            <dataString>in shamt arith out
+0x00000000 0 0 0x00000000
+0x00000000 0 1 0x00000000
+0x00000000 1 0 0x00000000
+0x00000000 1 1 0x00000000
+0x00000000 2 0 0x00000000
+0x00000000 2 1 0x00000000
+0x00000000 3 0 0x00000000
+0x00000000 3 1 0x00000000
+0x00000000 4 0 0x00000000
+0x00000000 4 1 0x00000000
+0x00000000 7 0 0x00000000
+0x00000000 7 1 0x00000000
+0x00000000 8 0 0x00000000
+0x00000000 8 1 0x00000000
+0x00000000 15 0 0x00000000
+0x00000000 15 1 0x00000000
+0x00000000 16 0 0x00000000
+0x00000000 16 1 0x00000000
+0x00000000 17 0 0x00000000
+0x00000000 17 1 0x00000000
+0x00000000 30 0 0x00000000
+0x00000000 30 1 0x00000000
+0x00000000 31 0 0x00000000
+0x00000000 31 1 0x00000000
+0x00000000 6 0 0x00000000
+0x00000000 6 1 0x00000000
+0x00000000 2 0 0x00000000
+0x00000000 2 1 0x00000000
+0x00000000 18 0 0x00000000
+0x00000000 18 1 0x00000000
+0x00000000 19 0 0x00000000
+0x00000000 19 1 0x00000000
+0x00000001 0 0 0x00000001
+0x00000001 0 1 0x00000001
+0x00000001 1 0 0x00000000
+0x00000001 1 1 0x00000000
+0x00000001 2 0 0x00000000
+0x00000001 2 1 0x00000000
+0x00000001 3 0 0x00000000
+0x00000001 3 1 0x00000000
+0x00000001 4 0 0x00000000
+0x00000001 4 1 0x00000000
+0x00000001 7 0 0x00000000
+0x00000001 7 1 0x00000000
+0x00000001 8 0 0x00000000
+0x00000001 8 1 0x00000000
+0x00000001 15 0 0x00000000
+0x00000001 15 1 0x00000000
+0x00000001 16 0 0x00000000
+0x00000001 16 1 0x00000000
+0x00000001 17 0 0x00000000
+0x00000001 17 1 0x00000000
+0x00000001 30 0 0x00000000
+0x00000001 30 1 0x00000000
+0x00000001 31 0 0x00000000
+0x00000001 31 1 0x00000000
+0x00000001 27 0 0x00000000
+0x00000001 27 1 0x00000000
+0x00000001 27 0 0x00000000
+0x00000001 27 1 0x00000000
+0x00000001 19 0 0x00000000
+0x00000001 19 1 0x00000000
+0x00000001 30 0 0x00000000
+0x00000001 30 1 0x00000000
+0x80000000 0 0 0x80000000
+0x80000000 0 1 0x80000000
+0x80000000 1 0 0x40000000
+0x80000000 1 1 0xC0000000
+0x80000000 2 0 0x20000000
+0x80000000 2 1 0xE0000000
+0x80000000 3 0 0x10000000
+0x80000000 3 1 0xF0000000
+0x80000000 4 0 0x08000000
+0x80000000 4 1 0xF8000000
+0x80000000 7 0 0x01000000
+0x80000000 7 1 0xFF000000
+0x80000000 8 0 0x00800000
+0x80000000 8 1 0xFF800000
+0x80000000 15 0 0x00010000
+0x80000000 15 1 0xFFFF0000
+0x80000000 16 0 0x00008000
+0x80000000 16 1 0xFFFF8000
+0x80000000 17 0 0x00004000
+0x80000000 17 1 0xFFFFC000
+0x80000000 30 0 0x00000002
+0x80000000 30 1 0xFFFFFFFE
+0x80000000 31 0 0x00000001
+0x80000000 31 1 0xFFFFFFFF
+0x80000000 20 0 0x00000800
+0x80000000 20 1 0xFFFFF800
+0x80000000 25 0 0x00000040
+0x80000000 25 1 0xFFFFFFC0
+0x80000000 21 0 0x00000400
+0x80000000 21 1 0xFFFFFC00
+0x80000000 9 0 0x00400000
+0x80000000 9 1 0xFFC00000
+0xFFFFFFFF 0 0 0xFFFFFFFF
+0xFFFFFFFF 0 1 0xFFFFFFFF
+0xFFFFFFFF 1 0 0x7FFFFFFF
+0xFFFFFFFF 1 1 0xFFFFFFFF
+0xFFFFFFFF 2 0 0x3FFFFFFF
+0xFFFFFFFF 2 1 0xFFFFFFFF
+0xFFFFFFFF 3 0 0x1FFFFFFF
+0xFFFFFFFF 3 1 0xFFFFFFFF
+0xFFFFFFFF 4 0 0x0FFFFFFF
+0xFFFFFFFF 4 1 0xFFFFFFFF
+0xFFFFFFFF 7 0 0x01FFFFFF
+0xFFFFFFFF 7 1 0xFFFFFFFF
+0xFFFFFFFF 8 0 0x00FFFFFF
+0xFFFFFFFF 8 1 0xFFFFFFFF
+0xFFFFFFFF 15 0 0x0001FFFF
+0xFFFFFFFF 15 1 0xFFFFFFFF
+0xFFFFFFFF 16 0 0x0000FFFF
+0xFFFFFFFF 16 1 0xFFFFFFFF
+0xFFFFFFFF 17 0 0x00007FFF
+0xFFFFFFFF 17 1 0xFFFFFFFF
+0xFFFFFFFF 30 0 0x00000003
+0xFFFFFFFF 30 1 0xFFFFFFFF
+0xFFFFFFFF 31 0 0x00000001
+0xFFFFFFFF 31 1 0xFFFFFFFF
+0xFFFFFFFF 8 0 0x00FFFFFF
+0xFFFFFFFF 8 1 0xFFFFFFFF
+0xFFFFFFFF 6 0 0x03FFFFFF
+0xFFFFFFFF 6 1 0xFFFFFFFF
+0xFFFFFFFF 12 0 0x000FFFFF
+0xFFFFFFFF 12 1 0xFFFFFFFF
+0xFFFFFFFF 31 0 0x00000001
+0xFFFFFFFF 31 1 0xFFFFFFFF
+0x7FFFFFFF 0 0 0x7FFFFFFF
+0x7FFFFFFF 0 1 0x7FFFFFFF
+0x7FFFFFFF 1 0 0x3FFFFFFF
+0x7FFFFFFF 1 1 0x3FFFFFFF
+0x7FFFFFFF 2 0 0x1FFFFFFF
+0x7FFFFFFF 2 1 0x1FFFFFFF
+0x7FFFFFFF 3 0 0x0FFFFFFF
+0x7FFFFFFF 3 1 0x0FFFFFFF
+0x7FFFFFFF 4 0 0x07FFFFFF
+0x7FFFFFFF 4 1 0x07FFFFFF
+0x7FFFFFFF 7 0 0x00FFFFFF
+0x7FFFFFFF 7 1 0x00FFFFFF
+0x7FFFFFFF 8 0 0x007FFFFF
+0x7FFFFFFF 8 1 0x007FFFFF
+0x7FFFFFFF 15 0 0x0000FFFF
+0x7FFFFFFF 15 1 0x0000FFFF
+0x7FFFFFFF 16 0 0x00007FFF
+0x7FFFFFFF 16 1 0x00007FFF
+0x7FFFFFFF 17 0 0x00003FFF
+0x7FFFFFFF 17 1 0x00003FFF
+0x7FFFFFFF 30 0 0x00000001
+0x7FFFFFFF 30 1 0x00000001
+0x7FFFFFFF 31 0 0x00000000
+0x7FFFFFFF 31 1 0x00000000
+0x7FFFFFFF 18 0 0x00001FFF
+0x7FFFFFFF 18 1 0x00001FFF
+0x7FFFFFFF 15 0 0x0000FFFF
+0x7FFFFFFF 15 1 0x0000FFFF
+0x7FFFFFFF 20 0 0x000007FF
+0x7FFFFFFF 20 1 0x000007FF
+0x7FFFFFFF 31 0 0x00000000
+0x7FFFFFFF 31 1 0x00000000
+0x12345678 0 0 0x12345678
+0x12345678 0 1 0x12345678
+0x12345678 1 0 0x091A2B3C
+0x12345678 1 1 0x091A2B3C
+0x12345678 2 0 0x048D159E
+0x12345678 2 1 0x048D159E
+0x12345678 3 0 0x02468ACF
+0x12345678 3 1 0x02468ACF
+0x12345678 4 0 0x01234567
+0x12345678 4 1 0x01234567
+0x12345678 7 0 0x002468AC
+0x12345678 7 1 0x002468AC
+0x12345678 8 0 0x00123456
+0x12345678 8 1 0x00123456
+0x12345678 15 0 0x00002468
+0x12345678 15 1 0x00002468
+0x12345678 16 0 0x00001234
+0x12345678 16 1 0x00001234
+0x12345678 17 0 0x0000091A
+0x12345678 17 1 0x0000091A
+0x12345678 30 0 0x00000000
+0x12345678 30 1 0x00000000
+0x12345678 31 0 0x00000000
+0x12345678 31 1 0x00000000
+0x12345678 29 0 0x00000000
+0x12345678 29 1 0x00000000
+0x12345678 1 0 0x091A2B3C
+0x12345678 1 1 0x091A2B3C
+0x12345678 8 0 0x00123456
+0x12345678 8 1 0x00123456
+0x12345678 17 0 0x0000091A
+0x12345678 17 1 0x0000091A
+0x87654321 0 0 0x87654321
+0x87654321 0 1 0x87654321
+0x87654321 1 0 0x43B2A190
+0x87654321 1 1 0xC3B2A190
+0x87654321 2 0 0x21D950C8
+0x87654321 2 1 0xE1D950C8
+0x87654321 3 0 0x10ECA864
+0x87654321 3 1 0xF0ECA864
+0x87654321 4 0 0x08765432
+0x87654321 4 1 0xF8765432
+0x87654321 7 0 0x010ECA86
+0x87654321 7 1 0xFF0ECA86
+0x87654321 8 0 0x00876543
+0x87654321 8 1 0xFF876543
+0x87654321 15 0 0x00010ECA
+0x87654321 15 1 0xFFFF0ECA
+0x87654321 16 0 0x00008765
+0x87654321 16 1 0xFFFF8765
+0x87654321 17 0 0x000043B2
+0x87654321 17 1 0xFFFFC3B2
+0x87654321 30 0 0x00000002
+0x87654321 30 1 0xFFFFFFFE
+0x87654321 31 0 0x00000001
+0x87654321 31 1 0xFFFFFFFF
+0x87654321 13 0 0x00043B2A
+0x87654321 13 1 0xFFFC3B2A
+0x87654321 14 0 0x00021D95
+0x87654321 14 1 0xFFFE1D95
+0x87654321 15 0 0x00010ECA
+0x87654321 15 1 0xFFFF0ECA
+0x87654321 9 0 0x0043B2A1
+0x87654321 9 1 0xFFC3B2A1
+0xAAAAAAAA 0 0 0xAAAAAAAA
+0xAAAAAAAA 0 1 0xAAAAAAAA
+0xAAAAAAAA 1 0 0x55555555
+0xAAAAAAAA 1 1 0xD5555555
+0xAAAAAAAA 2 0 0x2AAAAAAA
+0xAAAAAAAA 2 1 0xEAAAAAAA
+0xAAAAAAAA 3 0 0x15555555
+0xAAAAAAAA 3 1 0xF5555555
+0xAAAAAAAA 4 0 0x0AAAAAAA
+0xAAAAAAAA 4 1 0xFAAAAAAA
+0xAAAAAAAA 7 0 0x01555555
+0xAAAAAAAA 7 1 0xFF555555
+0xAAAAAAAA 8 0 0x00AAAAAA
+0xAAAAAAAA 8 1 0xFFAAAAAA
+0xAAAAAAAA 15 0 0x00015555
+0xAAAAAAAA 15 1 0xFFFF5555
+0xAAAAAAAA 16 0 0x0000AAAA
+0xAAAAAAAA 16 1 0xFFFFAAAA
+0xAAAAAAAA 17 0 0x00005555
+0xAAAAAAAA 17 1 0xFFFFD555
+0xAAAAAAAA 30 0 0x00000002
+0xAAAAAAAA 30 1 0xFFFFFFFE
+0xAAAAAAAA 31 0 0x00000001
+0xAAAAAAAA 31 1 0xFFFFFFFF
+0xAAAAAAAA 30 0 0x00000002
+0xAAAAAAAA 30 1 0xFFFFFFFE
+0xAAAAAAAA 30 0 0x00000002
+0xAAAAAAAA 30 1 0xFFFFFFFE
+0xAAAAAAAA 9 0 0x00555555
+0xAAAAAAAA 9 1 0xFFD55555
+0xAAAAAAAA 11 0 0x00155555
+0xAAAAAAAA 11 1 0xFFF55555
+0x55555555 0 0 0x55555555
+0x55555555 0 1 0x55555555
+0x55555555 1 0 0x2AAAAAAA
+0x55555555 1 1 0x2AAAAAAA
+0x55555555 2 0 0x15555555
+0x55555555 2 1 0x15555555
+0x55555555 3 0 0x0AAAAAAA
+0x55555555 3 1 0x0AAAAAAA
+0x55555555 4 0 0x05555555
+0x55555555 4 1 0x05555555
+0x55555555 7 0 0x00AAAAAA
+0x55555555 7 1 0x00AAAAAA
+0x55555555 8 0 0x00555555
+0x55555555 8 1 0x00555555
+0x55555555 15 0 0x0000AAAA
+0x55555555 15 1 0x0000AAAA
+0x55555555 16 0 0x00005555
+0x55555555 16 1 0x00005555
+0x55555555 17 0 0x00002AAA
+0x55555555 17 1 0x00002AAA
+0x55555555 30 0 0x00000001
+0x55555555 30 1 0x00000001
+0x55555555 31 0 0x00000000
+0x55555555 31 1 0x00000000
+0x55555555 0 0 0x55555555
+0x55555555 0 1 0x55555555
+0x55555555 10 0 0x00155555
+0x55555555 10 1 0x00155555
+0x55555555 0 0 0x55555555
+0x55555555 0 1 0x55555555
+0x55555555 11 0 0x000AAAAA
+0x55555555 11 1 0x000AAAAA
+0x384735EE 0 0 0x384735EE
+0x384735EE 0 1 0x384735EE
+0x384735EE 1 0 0x1C239AF7
+0x384735EE 1 1 0x1C239AF7
+0x384735EE 2 0 0x0E11CD7B
+0x384735EE 2 1 0x0E11CD7B
+0x384735EE 3 0 0x0708E6BD
+0x384735EE 3 1 0x0708E6BD
+0x384735EE 4 0 0x0384735E
+0x384735EE 4 1 0x0384735E
+0x384735EE 7 0 0x00708E6B
+0x384735EE 7 1 0x00708E6B
+0x384735EE 8 0 0x00384735
+0x384735EE 8 1 0x00384735
+0x384735EE 15 0 0x0000708E
+0x384735EE 15 1 0x0000708E
+0x384735EE 16 0 0x00003847
+0x384735EE 16 1 0x00003847
+0x384735EE 17 0 0x00001C23
+0x384735EE 17 1 0x00001C23
+0x384735EE 30 0 0x00000000
+0x384735EE 30 1 0x00000000
+0x384735EE 31 0 0x00000000
+0x384735EE 31 1 0x00000000
+0x384735EE 11 0 0x000708E6
+0x384735EE 11 1 0x000708E6
+0x384735EE 9 0 0x001C239A
+0x384735EE 9 1 0x001C239A
+0x384735EE 22 0 0x000000E1
+0x384735EE 22 1 0x000000E1
+0x384735EE 10 0 0x000E11CD
+0x384735EE 10 1 0x000E11CD
+0x2EDECF68 0 0 0x2EDECF68
+0x2EDECF68 0 1 0x2EDECF68
+0x2EDECF68 1 0 0x176F67B4
+0x2EDECF68 1 1 0x176F67B4
+0x2EDECF68 2 0 0x0BB7B3DA
+0x2EDECF68 2 1 0x0BB7B3DA
+0x2EDECF68 3 0 0x05DBD9ED
+0x2EDECF68 3 1 0x05DBD9ED
+0x2EDECF68 4 0 0x02EDECF6
+0x2EDECF68 4 1 0x02EDECF6
+0x2EDECF68 7 0 0x005DBD9E
+0x2EDECF68 7 1 0x005DBD9E
+0x2EDECF68 8 0 0x002EDECF
+0x2EDECF68 8 1 0x002EDECF
+0x2EDECF68 15 0 0x00005DBD
+0x2EDECF68 15 1 0x00005DBD
+0x2EDECF68 16 0 0x00002EDE
+0x2EDECF68 16 1 0x00002EDE
+0x2EDECF68 17 0 0x0000176F
+0x2EDECF68 17 1 0x0000176F
+0x2EDECF68 30 0 0x00000000
+0x2EDECF68 30 1 0x00000000
+0x2EDECF68 31 0 0x00000000
+0x2EDECF68 31 1 0x00000000
+0x2EDECF68 20 0 0x000002ED
+0x2EDECF68 20 1 0x000002ED
+0x2EDECF68 11 0 0x0005DBD9
+0x2EDECF68 11 1 0x0005DBD9
+0x2EDECF68 9 0 0x00176F67
+0x2EDECF68 9 1 0x00176F67
+0x2EDECF68 22 0 0x000000BB
+0x2EDECF68 22 1 0x000000BB
+0xD2A4EFD2 0 0 0xD2A4EFD2
+0xD2A4EFD2 0 1 0xD2A4EFD2
+0xD2A4EFD2 1 0 0x695277E9
+0xD2A4EFD2 1 1 0xE95277E9
+0xD2A4EFD2 2 0 0x34A93BF4
+0xD2A4EFD2 2 1 0xF4A93BF4
+0xD2A4EFD2 3 0 0x1A549DFA
+0xD2A4EFD2 3 1 0xFA549DFA
+0xD2A4EFD2 4 0 0x0D2A4EFD
+0xD2A4EFD2 4 1 0xFD2A4EFD
+0xD2A4EFD2 7 0 0x01A549DF
+0xD2A4EFD2 7 1 0xFFA549DF
+0xD2A4EFD2 8 0 0x00D2A4EF
+0xD2A4EFD2 8 1 0xFFD2A4EF
+0xD2A4EFD2 15 0 0x0001A549
+0xD2A4EFD2 15 1 0xFFFFA549
+0xD2A4EFD2 16 0 0x0000D2A4
+0xD2A4EFD2 16 1 0xFFFFD2A4
+0xD2A4EFD2 17 0 0x00006952
+0xD2A4EFD2 17 1 0xFFFFE952
+0xD2A4EFD2 30 0 0x00000003
+0xD2A4EFD2 30 1 0xFFFFFFFF
+0xD2A4EFD2 31 0 0x00000001
+0xD2A4EFD2 31 1 0xFFFFFFFF
+0xD2A4EFD2 8 0 0x00D2A4EF
+0xD2A4EFD2 8 1 0xFFD2A4EF
+0xD2A4EFD2 14 0 0x00034A93
+0xD2A4EFD2 14 1 0xFFFF4A93
+0xD2A4EFD2 17 0 0x00006952
+0xD2A4EFD2 17 1 0xFFFFE952
+0xD2A4EFD2 1 0 0x695277E9
+0xD2A4EFD2 1 1 0xE95277E9
+0x27A1B377 0 0 0x27A1B377
+0x27A1B377 0 1 0x27A1B377
+0x27A1B377 1 0 0x13D0D9BB
+0x27A1B377 1 1 0x13D0D9BB
+0x27A1B377 2 0 0x09E86CDD
+0x27A1B377 2 1 0x09E86CDD
+0x27A1B377 3 0 0x04F4366E
+0x27A1B377 3 1 0x04F4366E
+0x27A1B377 4 0 0x027A1B37
+0x27A1B377 4 1 0x027A1B37
+0x27A1B377 7 0 0x004F4366
+0x27A1B377 7 1 0x004F4366
+0x27A1B377 8 0 0x0027A1B3
+0x27A1B377 8 1 0x0027A1B3
+0x27A1B377 15 0 0x00004F43
+0x27A1B377 15 1 0x00004F43
+0x27A1B377 16 0 0x000027A1
+0x27A1B377 16 1 0x000027A1
+0x27A1B377 17 0 0x000013D0
+0x27A1B377 17 1 0x000013D0
+0x27A1B377 30 0 0x00000000
+0x27A1B377 30 1 0x00000000
+0x27A1B377 31 0 0x00000000
+0x27A1B377 31 1 0x00000000
+0x27A1B377 7 0 0x004F4366
+0x27A1B377 7 1 0x004F4366
+0x27A1B377 26 0 0x00000009
+0x27A1B377 26 1 0x00000009
+0x27A1B377 17 0 0x000013D0
+0x27A1B377 17 1 0x000013D0
+0x27A1B377 30 0 0x00000000
+0x27A1B377 30 1 0x00000000
+0x7ECE606E 0 0 0x7ECE606E
+0x7ECE606E 0 1 0x7ECE606E
+0x7ECE606E 1 0 0x3F673037
+0x7ECE606E 1 1 0x3F673037
+0x7ECE606E 2 0 0x1FB3981B
+0x7ECE606E 2 1 0x1FB3981B
+0x7ECE606E 3 0 0x0FD9CC0D
+0x7ECE606E 3 1 0x0FD9CC0D
+0x7ECE606E 4 0 0x07ECE606
+0x7ECE606E 4 1 0x07ECE606
+0x7ECE606E 7 0 0x00FD9CC0
+0x7ECE606E 7 1 0x00FD9CC0
+0x7ECE606E 8 0 0x007ECE60
+0x7ECE606E 8 1 0x007ECE60
+0x7ECE606E 15 0 0x0000FD9C
+0x7ECE606E 15 1 0x0000FD9C
+0x7ECE606E 16 0 0x00007ECE
+0x7ECE606E 16 1 0x00007ECE
+0x7ECE606E 17 0 0x00003F67
+0x7ECE606E 17 1 0x00003F67
+0x7ECE606E 30 0 0x00000001
+0x7ECE606E 30 1 0x00000001
+0x7ECE606E 31 0 0x00000000
+0x7ECE606E 31 1 0x00000000
+0x7ECE606E 12 0 0x0007ECE6
+0x7ECE606E 12 1 0x0007ECE6
+0x7ECE606E 13 0 0x0003F673
+0x7ECE606E 13 1 0x0003F673
+0x7ECE606E 10 0 0x001FB398
+0x7ECE606E 10 1 0x001FB398
+0x7ECE606E 17 0 0x00003F67
+0x7ECE606E 17 1 0x00003F67
+0xCB04DAF6 0 0 0xCB04DAF6
+0xCB04DAF6 0 1 0xCB04DAF6
+0xCB04DAF6 1 0 0x65826D7B
+0xCB04DAF6 1 1 0xE5826D7B
+0xCB04DAF6 2 0 0x32C136BD
+0xCB04DAF6 2 1 0xF2C136BD
+0xCB04DAF6 3 0 0x19609B5E
+0xCB04DAF6 3 1 0xF9609B5E
+0xCB04DAF6 4 0 0x0CB04DAF
+0xCB04DAF6 4 1 0xFCB04DAF
+0xCB04DAF6 7 0 0x019609B5
+0xCB04DAF6 7 1 0xFF9609B5
+0xCB04DAF6 8 0 0x00CB04DA
+0xCB04DAF6 8 1 0xFFCB04DA
+0xCB04DAF6 15 0 0x00019609
+0xCB04DAF6 15 1 0xFFFF9609
+0xCB04DAF6 16 0 0x0000CB04
+0xCB04DAF6 16 1 0xFFFFCB04
+0xCB04DAF6 17 0 0x00006582
+0xCB04DAF6 17 1 0xFFFFE582
+0xCB04DAF6 30 0 0x00000003
+0xCB04DAF6 30 1 0xFFFFFFFF
+0xCB04DAF6 31 0 0x00000001
+0xCB04DAF6 31 1 0xFFFFFFFF
+0xCB04DAF6 13 0 0x00065826
+0xCB04DAF6 13 1 0xFFFE5826
+0xCB04DAF6 26 0 0x00000032
+0xCB04DAF6 26 1 0xFFFFFFF2
+0xCB04DAF6 6 0 0x032C136B
+0xCB04DAF6 6 1 0xFF2C136B
+0xCB04DAF6 3 0 0x19609B5E
+0xCB04DAF6 3 1 0xF9609B5E
+</dataString>
+          </testData>
+        </entry>
+      </elementAttributes>
+      <pos x="0" y="380"/>
+    </visualElement>
+  </visualElements>
+  <wires>
+    <wire>
+      <p1 x="220" y="160"/>
+      <p2 x="240" y="160"/>
+    </wire>
+    <wire>
+      <p1 x="200" y="80"/>
+      <p2 x="240" y="80"/>
+    </wire>
+    <wire>
+      <p1 x="460" y="80"/>
+      <p2 x="480" y="80"/>
+    </wire>
+    <wire>
+      <p1 x="540" y="80"/>
+      <p2 x="580" y="80"/>
+    </wire>
+    <wire>
+      <p1 x="800" y="80"/>
+      <p2 x="820" y="80"/>
+    </wire>
+    <wire>
+      <p1 x="880" y="80"/>
+      <p2 x="920" y="80"/>
+    </wire>
+    <wire>
+      <p1 x="1140" y="80"/>
+      <p2 x="1160" y="80"/>
+    </wire>
+    <wire>
+      <p1 x="1220" y="80"/>
+      <p2 x="1260" y="80"/>
+    </wire>
+    <wire>
+      <p1 x="1480" y="80"/>
+      <p2 x="1500" y="80"/>
+    </wire>
+    <wire>
+      <p1 x="1560" y="80"/>
+      <p2 x="1600" y="80"/>
+    </wire>
+    <wire>
+      <p1 x="80" y="320"/>
+      <p2 x="1360" y="320"/>
+    </wire>
+    <wire>
+      <p1 x="0" y="260"/>
+      <p2 x="60" y="260"/>
+    </wire>
+    <wire>
+      <p1 x="80" y="260"/>
+      <p2 x="340" y="260"/>
+    </wire>
+    <wire>
+      <p1 x="0" y="180"/>
+      <p2 x="160" y="180"/>
+    </wire>
+    <wire>
+      <p1 x="60" y="20"/>
+      <p2 x="320" y="20"/>
+    </wire>
+    <wire>
+      <p1 x="400" y="20"/>
+      <p2 x="660" y="20"/>
+    </wire>
+    <wire>
+      <p1 x="740" y="20"/>
+      <p2 x="1000" y="20"/>
+    </wire>
+    <wire>
+      <p1 x="1080" y="20"/>
+      <p2 x="1340" y="20"/>
+    </wire>
+    <wire>
+      <p1 x="1420" y="20"/>
+      <p2 x="1680" y="20"/>
+    </wire>
+    <wire>
+      <p1 x="80" y="340"/>
+      <p2 x="1700" y="340"/>
+    </wire>
+    <wire>
+      <p1 x="0" y="40"/>
+      <p2 x="20" y="40"/>
+    </wire>
+    <wire>
+      <p1 x="360" y="40"/>
+      <p2 x="400" y="40"/>
+    </wire>
+    <wire>
+      <p1 x="700" y="40"/>
+      <p2 x="740" y="40"/>
+    </wire>
+    <wire>
+      <p1 x="1040" y="40"/>
+      <p2 x="1080" y="40"/>
+    </wire>
+    <wire>
+      <p1 x="1380" y="40"/>
+      <p2 x="1420" y="40"/>
+    </wire>
+    <wire>
+      <p1 x="1720" y="40"/>
+      <p2 x="1800" y="40"/>
+    </wire>
+    <wire>
+      <p1 x="20" y="40"/>
+      <p2 x="60" y="40"/>
+    </wire>
+    <wire>
+      <p1 x="80" y="280"/>
+      <p2 x="680" y="280"/>
+    </wire>
+    <wire>
+      <p1 x="20" y="140"/>
+      <p2 x="60" y="140"/>
+    </wire>
+    <wire>
+      <p1 x="80" y="140"/>
+      <p2 x="160" y="140"/>
+    </wire>
+    <wire>
+      <p1 x="60" y="60"/>
+      <p2 x="100" y="60"/>
+    </wire>
+    <wire>
+      <p1 x="120" y="60"/>
+      <p2 x="240" y="60"/>
+    </wire>
+    <wire>
+      <p1 x="260" y="60"/>
+      <p2 x="320" y="60"/>
+    </wire>
+    <wire>
+      <p1 x="400" y="60"/>
+      <p2 x="440" y="60"/>
+    </wire>
+    <wire>
+      <p1 x="460" y="60"/>
+      <p2 x="580" y="60"/>
+    </wire>
+    <wire>
+      <p1 x="600" y="60"/>
+      <p2 x="660" y="60"/>
+    </wire>
+    <wire>
+      <p1 x="740" y="60"/>
+      <p2 x="780" y="60"/>
+    </wire>
+    <wire>
+      <p1 x="800" y="60"/>
+      <p2 x="920" y="60"/>
+    </wire>
+    <wire>
+      <p1 x="940" y="60"/>
+      <p2 x="1000" y="60"/>
+    </wire>
+    <wire>
+      <p1 x="1080" y="60"/>
+      <p2 x="1120" y="60"/>
+    </wire>
+    <wire>
+      <p1 x="1140" y="60"/>
+      <p2 x="1260" y="60"/>
+    </wire>
+    <wire>
+      <p1 x="1280" y="60"/>
+      <p2 x="1340" y="60"/>
+    </wire>
+    <wire>
+      <p1 x="1420" y="60"/>
+      <p2 x="1460" y="60"/>
+    </wire>
+    <wire>
+      <p1 x="1480" y="60"/>
+      <p2 x="1600" y="60"/>
+    </wire>
+    <wire>
+      <p1 x="1620" y="60"/>
+      <p2 x="1680" y="60"/>
+    </wire>
+    <wire>
+      <p1 x="80" y="300"/>
+      <p2 x="1020" y="300"/>
+    </wire>
+    <wire>
+      <p1 x="400" y="20"/>
+      <p2 x="400" y="40"/>
+    </wire>
+    <wire>
+      <p1 x="400" y="40"/>
+      <p2 x="400" y="60"/>
+    </wire>
+    <wire>
+      <p1 x="1360" y="60"/>
+      <p2 x="1360" y="320"/>
+    </wire>
+    <wire>
+      <p1 x="20" y="40"/>
+      <p2 x="20" y="140"/>
+    </wire>
+    <wire>
+      <p1 x="340" y="60"/>
+      <p2 x="340" y="260"/>
+    </wire>
+    <wire>
+      <p1 x="740" y="20"/>
+      <p2 x="740" y="40"/>
+    </wire>
+    <wire>
+      <p1 x="740" y="40"/>
+      <p2 x="740" y="60"/>
+    </wire>
+    <wire>
+      <p1 x="1700" y="60"/>
+      <p2 x="1700" y="340"/>
+    </wire>
+    <wire>
+      <p1 x="680" y="60"/>
+      <p2 x="680" y="280"/>
+    </wire>
+    <wire>
+      <p1 x="1080" y="20"/>
+      <p2 x="1080" y="40"/>
+    </wire>
+    <wire>
+      <p1 x="1080" y="40"/>
+      <p2 x="1080" y="60"/>
+    </wire>
+    <wire>
+      <p1 x="60" y="20"/>
+      <p2 x="60" y="40"/>
+    </wire>
+    <wire>
+      <p1 x="60" y="40"/>
+      <p2 x="60" y="60"/>
+    </wire>
+    <wire>
+      <p1 x="1020" y="60"/>
+      <p2 x="1020" y="300"/>
+    </wire>
+    <wire>
+      <p1 x="1420" y="20"/>
+      <p2 x="1420" y="40"/>
+    </wire>
+    <wire>
+      <p1 x="1420" y="40"/>
+      <p2 x="1420" y="60"/>
+    </wire>
+  </wires>
+</circuit>

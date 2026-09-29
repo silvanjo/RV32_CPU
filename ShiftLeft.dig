@@ -1,0 +1,831 @@
+<?xml version="1.0" encoding="utf-8"?>
+<circuit>
+  <version>2</version>
+  <attributes>
+    <entry>
+      <string>Width</string>
+      <int>5</int>
+    </entry>
+  </attributes>
+  <visualElements>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>in</string>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>32</int>
+        </entry>
+      </elementAttributes>
+      <pos x="0" y="40"/>
+    </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>shamt</string>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>5</int>
+        </entry>
+      </elementAttributes>
+      <pos x="0" y="160"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Splitter</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Input Splitting</string>
+          <string>5</string>
+        </entry>
+        <entry>
+          <string>Output Splitting</string>
+          <string>1*5</string>
+        </entry>
+      </elementAttributes>
+      <pos x="60" y="160"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Splitter</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Input Splitting</string>
+          <string>32</string>
+        </entry>
+        <entry>
+          <string>Output Splitting</string>
+          <string>0-30</string>
+        </entry>
+      </elementAttributes>
+      <pos x="100" y="60"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Splitter</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Input Splitting</string>
+          <string>1,31</string>
+        </entry>
+        <entry>
+          <string>Output Splitting</string>
+          <string>32</string>
+        </entry>
+      </elementAttributes>
+      <pos x="240" y="60"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Multiplexer</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Bits</string>
+          <int>32</int>
+        </entry>
+      </elementAttributes>
+      <pos x="320" y="20"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Const</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Value</string>
+          <long>0</long>
+        </entry>
+      </elementAttributes>
+      <pos x="200" y="60"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Splitter</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Input Splitting</string>
+          <string>32</string>
+        </entry>
+        <entry>
+          <string>Output Splitting</string>
+          <string>0-29</string>
+        </entry>
+      </elementAttributes>
+      <pos x="440" y="60"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Splitter</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Input Splitting</string>
+          <string>2,30</string>
+        </entry>
+        <entry>
+          <string>Output Splitting</string>
+          <string>32</string>
+        </entry>
+      </elementAttributes>
+      <pos x="580" y="60"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Multiplexer</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Bits</string>
+          <int>32</int>
+        </entry>
+      </elementAttributes>
+      <pos x="660" y="20"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Const</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Value</string>
+          <long>0</long>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>2</int>
+        </entry>
+      </elementAttributes>
+      <pos x="540" y="60"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Splitter</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Input Splitting</string>
+          <string>32</string>
+        </entry>
+        <entry>
+          <string>Output Splitting</string>
+          <string>0-27</string>
+        </entry>
+      </elementAttributes>
+      <pos x="780" y="60"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Splitter</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Input Splitting</string>
+          <string>4,28</string>
+        </entry>
+        <entry>
+          <string>Output Splitting</string>
+          <string>32</string>
+        </entry>
+      </elementAttributes>
+      <pos x="920" y="60"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Multiplexer</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Bits</string>
+          <int>32</int>
+        </entry>
+      </elementAttributes>
+      <pos x="1000" y="20"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Const</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Value</string>
+          <long>0</long>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>4</int>
+        </entry>
+      </elementAttributes>
+      <pos x="880" y="60"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Splitter</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Input Splitting</string>
+          <string>32</string>
+        </entry>
+        <entry>
+          <string>Output Splitting</string>
+          <string>0-23</string>
+        </entry>
+      </elementAttributes>
+      <pos x="1120" y="60"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Splitter</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Input Splitting</string>
+          <string>8,24</string>
+        </entry>
+        <entry>
+          <string>Output Splitting</string>
+          <string>32</string>
+        </entry>
+      </elementAttributes>
+      <pos x="1260" y="60"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Multiplexer</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Bits</string>
+          <int>32</int>
+        </entry>
+      </elementAttributes>
+      <pos x="1340" y="20"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Const</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Value</string>
+          <long>0</long>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>8</int>
+        </entry>
+      </elementAttributes>
+      <pos x="1220" y="60"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Splitter</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Input Splitting</string>
+          <string>32</string>
+        </entry>
+        <entry>
+          <string>Output Splitting</string>
+          <string>0-15</string>
+        </entry>
+      </elementAttributes>
+      <pos x="1460" y="60"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Splitter</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Input Splitting</string>
+          <string>16,16</string>
+        </entry>
+        <entry>
+          <string>Output Splitting</string>
+          <string>32</string>
+        </entry>
+      </elementAttributes>
+      <pos x="1600" y="60"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Multiplexer</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Bits</string>
+          <int>32</int>
+        </entry>
+      </elementAttributes>
+      <pos x="1680" y="20"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Const</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Value</string>
+          <long>0</long>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>16</int>
+        </entry>
+      </elementAttributes>
+      <pos x="1560" y="60"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>out</string>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>32</int>
+        </entry>
+      </elementAttributes>
+      <pos x="1800" y="40"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Testcase</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>ShiftLeft</string>
+        </entry>
+        <entry>
+          <string>Testdata</string>
+          <testData>
+            <dataString>in shamt out
+0x00000000 0 0x00000000
+0x00000000 1 0x00000000
+0x00000000 2 0x00000000
+0x00000000 3 0x00000000
+0x00000000 4 0x00000000
+0x00000000 7 0x00000000
+0x00000000 8 0x00000000
+0x00000000 15 0x00000000
+0x00000000 16 0x00000000
+0x00000000 17 0x00000000
+0x00000000 30 0x00000000
+0x00000000 31 0x00000000
+0x00000000 6 0x00000000
+0x00000000 2 0x00000000
+0x00000000 18 0x00000000
+0x00000000 19 0x00000000
+0x00000001 0 0x00000001
+0x00000001 1 0x00000002
+0x00000001 2 0x00000004
+0x00000001 3 0x00000008
+0x00000001 4 0x00000010
+0x00000001 7 0x00000080
+0x00000001 8 0x00000100
+0x00000001 15 0x00008000
+0x00000001 16 0x00010000
+0x00000001 17 0x00020000
+0x00000001 30 0x40000000
+0x00000001 31 0x80000000
+0x00000001 27 0x08000000
+0x00000001 27 0x08000000
+0x00000001 19 0x00080000
+0x00000001 30 0x40000000
+0x80000000 0 0x80000000
+0x80000000 1 0x00000000
+0x80000000 2 0x00000000
+0x80000000 3 0x00000000
+0x80000000 4 0x00000000
+0x80000000 7 0x00000000
+0x80000000 8 0x00000000
+0x80000000 15 0x00000000
+0x80000000 16 0x00000000
+0x80000000 17 0x00000000
+0x80000000 30 0x00000000
+0x80000000 31 0x00000000
+0x80000000 20 0x00000000
+0x80000000 25 0x00000000
+0x80000000 21 0x00000000
+0x80000000 9 0x00000000
+0xFFFFFFFF 0 0xFFFFFFFF
+0xFFFFFFFF 1 0xFFFFFFFE
+0xFFFFFFFF 2 0xFFFFFFFC
+0xFFFFFFFF 3 0xFFFFFFF8
+0xFFFFFFFF 4 0xFFFFFFF0
+0xFFFFFFFF 7 0xFFFFFF80
+0xFFFFFFFF 8 0xFFFFFF00
+0xFFFFFFFF 15 0xFFFF8000
+0xFFFFFFFF 16 0xFFFF0000
+0xFFFFFFFF 17 0xFFFE0000
+0xFFFFFFFF 30 0xC0000000
+0xFFFFFFFF 31 0x80000000
+0xFFFFFFFF 8 0xFFFFFF00
+0xFFFFFFFF 6 0xFFFFFFC0
+0xFFFFFFFF 12 0xFFFFF000
+0xFFFFFFFF 31 0x80000000
+0x7FFFFFFF 0 0x7FFFFFFF
+0x7FFFFFFF 1 0xFFFFFFFE
+0x7FFFFFFF 2 0xFFFFFFFC
+0x7FFFFFFF 3 0xFFFFFFF8
+0x7FFFFFFF 4 0xFFFFFFF0
+0x7FFFFFFF 7 0xFFFFFF80
+0x7FFFFFFF 8 0xFFFFFF00
+0x7FFFFFFF 15 0xFFFF8000
+0x7FFFFFFF 16 0xFFFF0000
+0x7FFFFFFF 17 0xFFFE0000
+0x7FFFFFFF 30 0xC0000000
+0x7FFFFFFF 31 0x80000000
+0x7FFFFFFF 18 0xFFFC0000
+0x7FFFFFFF 15 0xFFFF8000
+0x7FFFFFFF 20 0xFFF00000
+0x7FFFFFFF 31 0x80000000
+0x12345678 0 0x12345678
+0x12345678 1 0x2468ACF0
+0x12345678 2 0x48D159E0
+0x12345678 3 0x91A2B3C0
+0x12345678 4 0x23456780
+0x12345678 7 0x1A2B3C00
+0x12345678 8 0x34567800
+0x12345678 15 0x2B3C0000
+0x12345678 16 0x56780000
+0x12345678 17 0xACF00000
+0x12345678 30 0x00000000
+0x12345678 31 0x00000000
+0x12345678 29 0x00000000
+0x12345678 1 0x2468ACF0
+0x12345678 8 0x34567800
+0x12345678 17 0xACF00000
+0x87654321 0 0x87654321
+0x87654321 1 0x0ECA8642
+0x87654321 2 0x1D950C84
+0x87654321 3 0x3B2A1908
+0x87654321 4 0x76543210
+0x87654321 7 0xB2A19080
+0x87654321 8 0x65432100
+0x87654321 15 0xA1908000
+0x87654321 16 0x43210000
+0x87654321 17 0x86420000
+0x87654321 30 0x40000000
+0x87654321 31 0x80000000
+0x87654321 13 0xA8642000
+0x87654321 14 0x50C84000
+0x87654321 15 0xA1908000
+0x87654321 9 0xCA864200
+0xAAAAAAAA 0 0xAAAAAAAA
+0xAAAAAAAA 1 0x55555554
+0xAAAAAAAA 2 0xAAAAAAA8
+0xAAAAAAAA 3 0x55555550
+0xAAAAAAAA 4 0xAAAAAAA0
+0xAAAAAAAA 7 0x55555500
+0xAAAAAAAA 8 0xAAAAAA00
+0xAAAAAAAA 15 0x55550000
+0xAAAAAAAA 16 0xAAAA0000
+0xAAAAAAAA 17 0x55540000
+0xAAAAAAAA 30 0x80000000
+0xAAAAAAAA 31 0x00000000
+0xAAAAAAAA 30 0x80000000
+0xAAAAAAAA 30 0x80000000
+0xAAAAAAAA 9 0x55555400
+0xAAAAAAAA 11 0x55555000
+0x55555555 0 0x55555555
+0x55555555 1 0xAAAAAAAA
+0x55555555 2 0x55555554
+0x55555555 3 0xAAAAAAA8
+0x55555555 4 0x55555550
+0x55555555 7 0xAAAAAA80
+0x55555555 8 0x55555500
+0x55555555 15 0xAAAA8000
+0x55555555 16 0x55550000
+0x55555555 17 0xAAAA0000
+0x55555555 30 0x40000000
+0x55555555 31 0x80000000
+0x55555555 0 0x55555555
+0x55555555 10 0x55555400
+0x55555555 0 0x55555555
+0x55555555 11 0xAAAAA800
+0x384735EE 0 0x384735EE
+0x384735EE 1 0x708E6BDC
+0x384735EE 2 0xE11CD7B8
+0x384735EE 3 0xC239AF70
+0x384735EE 4 0x84735EE0
+0x384735EE 7 0x239AF700
+0x384735EE 8 0x4735EE00
+0x384735EE 15 0x9AF70000
+0x384735EE 16 0x35EE0000
+0x384735EE 17 0x6BDC0000
+0x384735EE 30 0x80000000
+0x384735EE 31 0x00000000
+0x384735EE 11 0x39AF7000
+0x384735EE 9 0x8E6BDC00
+0x384735EE 22 0x7B800000
+0x384735EE 10 0x1CD7B800
+0x2EDECF68 0 0x2EDECF68
+0x2EDECF68 1 0x5DBD9ED0
+0x2EDECF68 2 0xBB7B3DA0
+0x2EDECF68 3 0x76F67B40
+0x2EDECF68 4 0xEDECF680
+0x2EDECF68 7 0x6F67B400
+0x2EDECF68 8 0xDECF6800
+0x2EDECF68 15 0x67B40000
+0x2EDECF68 16 0xCF680000
+0x2EDECF68 17 0x9ED00000
+0x2EDECF68 30 0x00000000
+0x2EDECF68 31 0x00000000
+0x2EDECF68 20 0xF6800000
+0x2EDECF68 11 0xF67B4000
+0x2EDECF68 9 0xBD9ED000
+0x2EDECF68 22 0xDA000000
+0xD2A4EFD2 0 0xD2A4EFD2
+0xD2A4EFD2 1 0xA549DFA4
+0xD2A4EFD2 2 0x4A93BF48
+0xD2A4EFD2 3 0x95277E90
+0xD2A4EFD2 4 0x2A4EFD20
+0xD2A4EFD2 7 0x5277E900
+0xD2A4EFD2 8 0xA4EFD200
+0xD2A4EFD2 15 0x77E90000
+0xD2A4EFD2 16 0xEFD20000
+0xD2A4EFD2 17 0xDFA40000
+0xD2A4EFD2 30 0x80000000
+0xD2A4EFD2 31 0x00000000
+0xD2A4EFD2 8 0xA4EFD200
+0xD2A4EFD2 14 0x3BF48000
+0xD2A4EFD2 17 0xDFA40000
+0xD2A4EFD2 1 0xA549DFA4
+0x27A1B377 0 0x27A1B377
+0x27A1B377 1 0x4F4366EE
+0x27A1B377 2 0x9E86CDDC
+0x27A1B377 3 0x3D0D9BB8
+0x27A1B377 4 0x7A1B3770
+0x27A1B377 7 0xD0D9BB80
+0x27A1B377 8 0xA1B37700
+0x27A1B377 15 0xD9BB8000
+0x27A1B377 16 0xB3770000
+0x27A1B377 17 0x66EE0000
+0x27A1B377 30 0xC0000000
+0x27A1B377 31 0x80000000
+0x27A1B377 7 0xD0D9BB80
+0x27A1B377 26 0xDC000000
+0x27A1B377 17 0x66EE0000
+0x27A1B377 30 0xC0000000
+0x7ECE606E 0 0x7ECE606E
+0x7ECE606E 1 0xFD9CC0DC
+0x7ECE606E 2 0xFB3981B8
+0x7ECE606E 3 0xF6730370
+0x7ECE606E 4 0xECE606E0
+0x7ECE606E 7 0x67303700
+0x7ECE606E 8 0xCE606E00
+0x7ECE606E 15 0x30370000
+0x7ECE606E 16 0x606E0000
+0x7ECE606E 17 0xC0DC0000
+0x7ECE606E 30 0x80000000
+0x7ECE606E 31 0x00000000
+0x7ECE606E 12 0xE606E000
+0x7ECE606E 13 0xCC0DC000
+0x7ECE606E 10 0x3981B800
+0x7ECE606E 17 0xC0DC0000
+0xCB04DAF6 0 0xCB04DAF6
+0xCB04DAF6 1 0x9609B5EC
+0xCB04DAF6 2 0x2C136BD8
+0xCB04DAF6 3 0x5826D7B0
+0xCB04DAF6 4 0xB04DAF60
+0xCB04DAF6 7 0x826D7B00
+0xCB04DAF6 8 0x04DAF600
+0xCB04DAF6 15 0x6D7B0000
+0xCB04DAF6 16 0xDAF60000
+0xCB04DAF6 17 0xB5EC0000
+0xCB04DAF6 30 0x80000000
+0xCB04DAF6 31 0x00000000
+0xCB04DAF6 13 0x9B5EC000
+0xCB04DAF6 26 0xD8000000
+0xCB04DAF6 6 0xC136BD80
+0xCB04DAF6 3 0x5826D7B0
+</dataString>
+          </testData>
+        </entry>
+      </elementAttributes>
+      <pos x="0" y="280"/>
+    </visualElement>
+  </visualElements>
+  <wires>
+    <wire>
+      <p1 x="0" y="160"/>
+      <p2 x="60" y="160"/>
+    </wire>
+    <wire>
+      <p1 x="80" y="160"/>
+      <p2 x="340" y="160"/>
+    </wire>
+    <wire>
+      <p1 x="160" y="80"/>
+      <p2 x="240" y="80"/>
+    </wire>
+    <wire>
+      <p1 x="500" y="80"/>
+      <p2 x="580" y="80"/>
+    </wire>
+    <wire>
+      <p1 x="840" y="80"/>
+      <p2 x="920" y="80"/>
+    </wire>
+    <wire>
+      <p1 x="1180" y="80"/>
+      <p2 x="1260" y="80"/>
+    </wire>
+    <wire>
+      <p1 x="1520" y="80"/>
+      <p2 x="1600" y="80"/>
+    </wire>
+    <wire>
+      <p1 x="80" y="240"/>
+      <p2 x="1700" y="240"/>
+    </wire>
+    <wire>
+      <p1 x="60" y="20"/>
+      <p2 x="320" y="20"/>
+    </wire>
+    <wire>
+      <p1 x="400" y="20"/>
+      <p2 x="660" y="20"/>
+    </wire>
+    <wire>
+      <p1 x="740" y="20"/>
+      <p2 x="1000" y="20"/>
+    </wire>
+    <wire>
+      <p1 x="1080" y="20"/>
+      <p2 x="1340" y="20"/>
+    </wire>
+    <wire>
+      <p1 x="1420" y="20"/>
+      <p2 x="1680" y="20"/>
+    </wire>
+    <wire>
+      <p1 x="80" y="180"/>
+      <p2 x="680" y="180"/>
+    </wire>
+    <wire>
+      <p1 x="0" y="40"/>
+      <p2 x="60" y="40"/>
+    </wire>
+    <wire>
+      <p1 x="360" y="40"/>
+      <p2 x="400" y="40"/>
+    </wire>
+    <wire>
+      <p1 x="700" y="40"/>
+      <p2 x="740" y="40"/>
+    </wire>
+    <wire>
+      <p1 x="1040" y="40"/>
+      <p2 x="1080" y="40"/>
+    </wire>
+    <wire>
+      <p1 x="1380" y="40"/>
+      <p2 x="1420" y="40"/>
+    </wire>
+    <wire>
+      <p1 x="1720" y="40"/>
+      <p2 x="1800" y="40"/>
+    </wire>
+    <wire>
+      <p1 x="80" y="200"/>
+      <p2 x="1020" y="200"/>
+    </wire>
+    <wire>
+      <p1 x="60" y="60"/>
+      <p2 x="100" y="60"/>
+    </wire>
+    <wire>
+      <p1 x="200" y="60"/>
+      <p2 x="240" y="60"/>
+    </wire>
+    <wire>
+      <p1 x="120" y="60"/>
+      <p2 x="160" y="60"/>
+    </wire>
+    <wire>
+      <p1 x="260" y="60"/>
+      <p2 x="320" y="60"/>
+    </wire>
+    <wire>
+      <p1 x="400" y="60"/>
+      <p2 x="440" y="60"/>
+    </wire>
+    <wire>
+      <p1 x="540" y="60"/>
+      <p2 x="580" y="60"/>
+    </wire>
+    <wire>
+      <p1 x="460" y="60"/>
+      <p2 x="500" y="60"/>
+    </wire>
+    <wire>
+      <p1 x="600" y="60"/>
+      <p2 x="660" y="60"/>
+    </wire>
+    <wire>
+      <p1 x="740" y="60"/>
+      <p2 x="780" y="60"/>
+    </wire>
+    <wire>
+      <p1 x="880" y="60"/>
+      <p2 x="920" y="60"/>
+    </wire>
+    <wire>
+      <p1 x="800" y="60"/>
+      <p2 x="840" y="60"/>
+    </wire>
+    <wire>
+      <p1 x="940" y="60"/>
+      <p2 x="1000" y="60"/>
+    </wire>
+    <wire>
+      <p1 x="1080" y="60"/>
+      <p2 x="1120" y="60"/>
+    </wire>
+    <wire>
+      <p1 x="1220" y="60"/>
+      <p2 x="1260" y="60"/>
+    </wire>
+    <wire>
+      <p1 x="1140" y="60"/>
+      <p2 x="1180" y="60"/>
+    </wire>
+    <wire>
+      <p1 x="1280" y="60"/>
+      <p2 x="1340" y="60"/>
+    </wire>
+    <wire>
+      <p1 x="1420" y="60"/>
+      <p2 x="1460" y="60"/>
+    </wire>
+    <wire>
+      <p1 x="1560" y="60"/>
+      <p2 x="1600" y="60"/>
+    </wire>
+    <wire>
+      <p1 x="1480" y="60"/>
+      <p2 x="1520" y="60"/>
+    </wire>
+    <wire>
+      <p1 x="1620" y="60"/>
+      <p2 x="1680" y="60"/>
+    </wire>
+    <wire>
+      <p1 x="80" y="220"/>
+      <p2 x="1360" y="220"/>
+    </wire>
+    <wire>
+      <p1 x="160" y="60"/>
+      <p2 x="160" y="80"/>
+    </wire>
+    <wire>
+      <p1 x="740" y="20"/>
+      <p2 x="740" y="40"/>
+    </wire>
+    <wire>
+      <p1 x="740" y="40"/>
+      <p2 x="740" y="60"/>
+    </wire>
+    <wire>
+      <p1 x="1700" y="60"/>
+      <p2 x="1700" y="240"/>
+    </wire>
+    <wire>
+      <p1 x="680" y="60"/>
+      <p2 x="680" y="180"/>
+    </wire>
+    <wire>
+      <p1 x="840" y="60"/>
+      <p2 x="840" y="80"/>
+    </wire>
+    <wire>
+      <p1 x="1420" y="20"/>
+      <p2 x="1420" y="40"/>
+    </wire>
+    <wire>
+      <p1 x="1420" y="40"/>
+      <p2 x="1420" y="60"/>
+    </wire>
+    <wire>
+      <p1 x="400" y="20"/>
+      <p2 x="400" y="40"/>
+    </wire>
+    <wire>
+      <p1 x="400" y="40"/>
+      <p2 x="400" y="60"/>
+    </wire>
+    <wire>
+      <p1 x="1360" y="60"/>
+      <p2 x="1360" y="220"/>
+    </wire>
+    <wire>
+      <p1 x="1520" y="60"/>
+      <p2 x="1520" y="80"/>
+    </wire>
+    <wire>
+      <p1 x="340" y="60"/>
+      <p2 x="340" y="160"/>
+    </wire>
+    <wire>
+      <p1 x="500" y="60"/>
+      <p2 x="500" y="80"/>
+    </wire>
+    <wire>
+      <p1 x="1080" y="20"/>
+      <p2 x="1080" y="40"/>
+    </wire>
+    <wire>
+      <p1 x="1080" y="40"/>
+      <p2 x="1080" y="60"/>
+    </wire>
+    <wire>
+      <p1 x="60" y="20"/>
+      <p2 x="60" y="40"/>
+    </wire>
+    <wire>
+      <p1 x="60" y="40"/>
+      <p2 x="60" y="60"/>
+    </wire>
+    <wire>
+      <p1 x="1020" y="60"/>
+      <p2 x="1020" y="200"/>
+    </wire>
+    <wire>
+      <p1 x="1180" y="60"/>
+      <p2 x="1180" y="80"/>
+    </wire>
+  </wires>
+</circuit>
